@@ -37,8 +37,8 @@ class GetRest( unohelper.Base, XGetRest,  XAddIn, XServiceName ):
     def getProgrammaticCategoryName( self, aProgrammaticFunctionName ):
         return "Add-In"
 
-    #def getDisplayArgumentName( self, aProgrammaticFunctionName ):
-    #    return "Add-In"
+    def getDisplayArgumentName( self, aProgrammaticFunctionName ):
+        return "Add-In"
 
     def getrest(self,url) -> str:
         """
