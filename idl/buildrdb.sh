@@ -17,3 +17,19 @@ rem guw.pl regmerge ../rdb/sample.rdb UCR  XTokenCounter.urd
 
 # remerge.exe dist
 # C:\Program Files\LibreOffice\program
+
+# macOS
+# LibreOffice 6.0.4
+
+# idlc.exe dist
+# /Users/arakawayusuke/LibreOffice6.0_SDK/bin
+
+# -I dist
+# /Users/arakawayusuke/LibreOffice6.0_SDK/idl
+
+# remerge.exe dist
+# /Applications/LibreOffice.app/Contents/MacOS/regmerge
+# /usr/local/bin/regmerge
+
+# macOS LibreOffice python
+# /Applications/LibreOffice.app/Contents/Resources/python
