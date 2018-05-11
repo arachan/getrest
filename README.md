@@ -22,6 +22,6 @@ I modify getrest from tokencounter python-tokencounter-calc-addin.oxt.
 Sorry. don't use.
 
 1. =GETREST("http://url?postalcode=6040001")
-2. #VALUE
+2. #VALUE!
 
 
