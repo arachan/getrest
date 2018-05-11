@@ -40,7 +40,7 @@ class GetRest( unohelper.Base, XGetRest,  XAddIn, XServiceName ):
     #def getDisplayArgumentName( self, aProgrammaticFunctionName ):
     #    return "Add-In"
 
-    def getrest(self,url) -> json:
+    def getrest(self,url) -> str:
         """
         Get JSON Data from REST API
         :rtype:object
@@ -49,5 +49,5 @@ class GetRest( unohelper.Base, XGetRest,  XAddIn, XServiceName ):
         """
         data = urllib.request.urlopen(url)
         json_file = json.loads(data.read().decode('utf-8'))
-        return (String)json_file
+        return str(json_file)
 
