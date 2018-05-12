@@ -28,19 +28,16 @@ class GetRest( unohelper.Base, XGetRest,  XAddIn, XServiceName ):
     def getFunctionDescription( self , aProgrammaticName ):
         return "Get JSON Data from REST API"
 
-    def getDisplayArgumentName( self, aProgrammaticFunctionName, nArgument ):
-        return "Text"
-
     def getArgumentDescription( self, aProgrammaticFunctionName, nArgument ):
-        return "Get JSON Data from REST API"
+        return "URL of REST server"
     
     def getProgrammaticCategoryName( self, aProgrammaticFunctionName ):
         return "Add-In"
 
-    def getDisplayArgumentName( self, aProgrammaticFunctionName ):
-        return "Add-In"
+    def getDisplayArgumentName( self, aProgrammaticFunctionName, nArgument ):
+        return "URL string"
 
-    def getrest(self,url) -> str:
+    def GetRest(self, url) -> str:
         """
         Get JSON Data from REST API
         :rtype:object
