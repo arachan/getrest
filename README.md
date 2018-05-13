@@ -4,24 +4,27 @@ LibreOffice Calc extensions sample
 
 Get JSON from REST url.
 
-I modify getrest from tokencounter python-tokencounter-calc-addin.oxt.
+Based on tokencounter python-tokencounter-calc-addin.oxt.
 
 [Python-UNO bridge](http://www.openoffice.org/udk/python/python-bridge.html#examples)
 
 ## How to make extension
 
-1. This files compress getrest.zip .
-2. getrest.zip rename getrest.oxt .
+LibreOffice SDK is needed
+
+In Unix-like environment:
+
+1. edit `mkoxt.sh.conf` to adjust your environment
+2. run `./mkout.sh`
+
+In Windows: TODO (pull-req welcome!)
+
 
 ## How to install
-1. make getrest.oxt
+
+1. make `getrest.oxt`
 2. Double Click and Install extension to LibreOffice.
 
-## How to use.
+## How to use
 
-Sorry. don't use.
-
-1. =GETREST("http://url?postalcode=6040001")
-2. #VALUE!
-
-
+`=GETREST("http://some-funcy-api")`
