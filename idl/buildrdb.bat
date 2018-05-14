@@ -7,12 +7,8 @@
 :: -I dist
 :: C:\Program Files\LibreOffice\sdk\idl
 
-
 :: remerge.exe dist
 :: C:\Program Files\LibreOffice\program
-
-:: Windows10 x64 LibreOffice x64
-:: Windows10 x86 LibreOffice x86
 
 SET IDLC="%ProgramFiles%\LibreOffice\sdk\bin\idlc.exe"
 SET REGMERGE="%ProgramFiles%\LibreOffice\program\regmerge.exe"
