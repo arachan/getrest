@@ -25,6 +25,6 @@ ELSE{
 }
 
 # Make XGetRest.urd
-Start-Process -FilePath $IDLC -ArgumentList $IDL+" XGetRest.idl" 
+Start-Process -FilePath $IDLC -ArgumentList " -I '$IDL' .\XGetRest.idl"
 # Make getrest.rdb
 Start-Process -FilePath $REMERGE -ArgumentList "../rdb/getrest.rdb UCR XGetRest.urd" 
