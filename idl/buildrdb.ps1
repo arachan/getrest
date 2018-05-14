@@ -1,7 +1,6 @@
 # windows 10
 # LibreOffice 6
 
-
 # idlc.exe dist
 # C:\Program Files\LibreOffice\sdk\bin
 
