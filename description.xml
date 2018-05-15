@@ -4,7 +4,7 @@
 xmlns:d="http://openoffice.org/extensions/description/2006"
 xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<identifier value="org.openoffice.comp.addin.sample.python.getrest" />
+<identifier value="com_hatenablog_arachansan.getrest" />
 <dependencies>
     <OpenOffice.org-minimal-version value="4" d:name="LibreOffice 4"/>
 </dependencies>
