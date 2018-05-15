@@ -10,6 +10,7 @@
 :: remerge.exe dist
 :: C:\Program Files\LibreOffice\program
 
+CHCP 65001
 SET IDLC="%ProgramFiles%\LibreOffice\sdk\bin\idlc.exe"
 SET REGMERGE="%ProgramFiles%\LibreOffice\program\regmerge.exe"
 SET IDL="%ProgramFiles%\LibreOffice\sdk\idl"
@@ -33,6 +34,9 @@ GOTO BAT_END
 :BAT_END
 
 :: Make XGetRest.urd
+PATH=%ProgramFiles%\LibreOffice\program;%PATH%
+CD %~dp0
+%~d0
 %IDLC% -I %IDL% XGetRest.idl
 :: Make getrest.rdb
 %REGMERGE% ..\rdb\getrest.rdb UCR XGetRest.urd
