@@ -18,13 +18,13 @@ SET IDL="%ProgramFiles%\LibreOffice\sdk\idl"
 IF EXIST %IDLC% (GOTO FILE_TRUE) ELSE GOTO FILE_FALSE
 
 :FILE_TRUE
-ECHO "ファイルが見つかりました"
+ECHO "File is Found"
 :: Windows10 x64 LibreOffice x64
 :: Windows10 x86 LibreOffice x86
 GOTO BAT_END
 
 :FILE_FALSE
-ECHO "ファイルが見つかりません"
+ECHO "File is not Found"
 :: Windows10 x64 LibreOffice x86
 SET IDLC="%ProgramFiles(x86)%\LibreOffice\sdk\bin\idlc.exe"
 SET REGMERGE="%ProgramFiles(x86)%\LibreOffice\program\regmerge.exe"
