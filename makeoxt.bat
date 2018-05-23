@@ -10,7 +10,7 @@ IF EXIST %IDLC% (GOTO FILE_TRUE) ELSE GOTO FILE_FALSE
 ECHO "File is Found"
 :: Windows10 x64 LibreOffice x64
 :: Windows10 x86 LibreOffice x86
-GOTO RDBEND
+GOTO BUILDRDB
 
 :FILE_FALSE
 ECHO "File is not Found"
@@ -18,9 +18,9 @@ ECHO "File is not Found"
 SET IDLC="%ProgramFiles(x86)%\LibreOffice\sdk\bin\idlc.exe"
 SET REGMERGE="%ProgramFiles(x86)%\LibreOffice\program\regmerge.exe"
 SET IDL="%ProgramFiles(x86)%\LibreOffice\sdk\idl"
-GOTO RDBEND
+GOTO BUILDRDB
 
-:RDBEND
+:BUILDRDB
 
 :: Make XGetRest.urd
 %IDLC% -I %IDL% idl\XGetRest.idl
