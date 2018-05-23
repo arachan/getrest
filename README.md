@@ -28,8 +28,11 @@ Why 7zip use?
 Read [Windows Zip compress](https://github.com/arachan/getrest/projects/1) Project.
 
 I recommend [scoop](https://scoop.sh/) to install 7zip.
+
 [scoop](https://scoop.sh/) is comandline installer for windows.
+
 git,curl,ssh,so on.
+
 Any kind unix like commandline tools can install.
 
 ## How to install
