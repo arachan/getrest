@@ -26,7 +26,7 @@ ECHO "scoop installed 7zip."
 GOTO BAT_END
 
 :7Z
-ECHO "MSI Instelled 7zip"
+ECHO "Insteller installed 7zip"
 %Z% a -tzip getrest.zip reg.uno.py
 %Z% u getrest.zip META-INF
 %Z% u getrest.zip pythonpath

@@ -1,4 +1,4 @@
-# getRestAPI
+# getRest Function
 
 LibreOffice Calc extensions sample 
 
@@ -17,8 +17,12 @@ In Unix-like environment:
 1. edit `mkoxt.sh.conf` to adjust your environment
 2. run `./mkout.sh`
 
-In Windows: TODO (pull-req welcome!)
+In Windows:
 
+1. Install LibreOffice SDK
+2. run buildrdb.bat
+3. Install [7zip](https://www.7-zip.org/)
+4. run makeoxt.bat
 
 ## How to install
 
