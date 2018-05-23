@@ -10,7 +10,7 @@ IF EXIST %Z% (GOTO 7Z)
 SET Z="%ProgramFiles(x86)%\7-Zip\7z.exe"
 IF EXIST %Z% (GOTO 7Z)
 
-::Compress
+::Compress to zip
 :SCOOP
 ECHO "scoop installed 7zip."
 7z a -tzip getrest.zip reg.uno.py
