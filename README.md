@@ -24,6 +24,9 @@ In Windows:
 3. Install [7zip](https://www.7-zip.org/)
 4. run makeoxt.bat
 
+Why 7zip use?
+Read [My Project](https://github.com/arachan/getrest/projects/1)
+
 ## How to install
 
 1. make `getrest.oxt`
