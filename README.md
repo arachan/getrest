@@ -25,7 +25,7 @@ In Windows:
 4. run makeoxt.bat
 
 Why 7zip use?
-Read [My Project](https://github.com/arachan/getrest/projects/1)
+Read [Windows Zip compress](https://github.com/arachan/getrest/projects/1) Project.
 
 ## How to install
 
