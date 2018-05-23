@@ -1,3 +1,32 @@
+::Make RDB
+CHCP 65001
+SET IDLC="%ProgramFiles%\LibreOffice\sdk\bin\idlc.exe"
+SET REGMERGE="%ProgramFiles%\LibreOffice\program\regmerge.exe"
+SET IDL="%ProgramFiles%\LibreOffice\sdk\idl"
+
+IF EXIST %IDLC% (GOTO FILE_TRUE) ELSE GOTO FILE_FALSE
+
+:FILE_TRUE
+ECHO "File is Found"
+:: Windows10 x64 LibreOffice x64
+:: Windows10 x86 LibreOffice x86
+GOTO BAT_END
+
+:FILE_FALSE
+ECHO "File is not Found"
+:: Windows10 x64 LibreOffice x86
+SET IDLC="%ProgramFiles(x86)%\LibreOffice\sdk\bin\idlc.exe"
+SET REGMERGE="%ProgramFiles(x86)%\LibreOffice\program\regmerge.exe"
+SET IDL="%ProgramFiles(x86)%\LibreOffice\sdk\idl"
+GOTO BAT_END
+
+:BAT_END
+
+:: Make XGetRest.urd
+%IDLC% -I %IDL% idl\XGetRest.idl
+:: Make getrest.rdb
+%REGMERGE% rdb\getrest.rdb UCR idl\XGetRest.urd
+
 ::serch 7zip
 :: Scoop 7zip
 SET Z=%USERPROFILE%\scoop\shims\7z.exe
