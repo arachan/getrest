@@ -10,7 +10,7 @@ IF EXIST %IDLC% (GOTO FILE_TRUE) ELSE GOTO FILE_FALSE
 ECHO "File is Found"
 :: Windows10 x64 LibreOffice x64
 :: Windows10 x86 LibreOffice x86
-GOTO BAT_END
+GOTO RDBEND
 
 :FILE_FALSE
 ECHO "File is not Found"
@@ -18,9 +18,9 @@ ECHO "File is not Found"
 SET IDLC="%ProgramFiles(x86)%\LibreOffice\sdk\bin\idlc.exe"
 SET REGMERGE="%ProgramFiles(x86)%\LibreOffice\program\regmerge.exe"
 SET IDL="%ProgramFiles(x86)%\LibreOffice\sdk\idl"
-GOTO BAT_END
+GOTO RDBEND
 
-:BAT_END
+:RDBEND
 
 :: Make XGetRest.urd
 %IDLC% -I %IDL% idl\XGetRest.idl
@@ -52,7 +52,7 @@ ECHO "scoop installed 7zip."
 7z u getrest.zip mkoxt.sh.conf
 7z u getrest.zip README.md
 7z u getrest.zip makeoxt.bat
-GOTO BAT_END
+GOTO ZIP_END
 
 :7Z
 ECHO "Insteller installed 7zip"
@@ -66,9 +66,9 @@ ECHO "Insteller installed 7zip"
 %Z% u getrest.zip mkoxt.sh.conf
 %Z% u getrest.zip README.md
 %Z% u getrest.zip makeoxt.bat
-GOTO BAT_END
+GOTO ZIP_END
 
-:BAT_END
+:ZIP_END
 
 ::rename to oxt
 move getrest.zip getrest.oxt
