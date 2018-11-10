@@ -1,9 +1,9 @@
 # use this on linux with ooo build env
 
 # Debian/Ubuntu package
-IDLC=/usr/lib/libreoffice/sdk/bin/idlc
-REGMERGE=/usr/lib/libreoffice/program/regmerge
-IDLPATH=/usr/lib/libreoffice/sdk/idl
+#IDLC=/usr/lib/libreoffice/sdk/bin/idlc
+#REGMERGE=/usr/lib/libreoffice/program/regmerge
+#IDLPATH=/usr/lib/libreoffice/sdk/idl
 
 # RedHat/CentOS x86_64
 # CentOS 7 (1804)
@@ -12,9 +12,9 @@ IDLPATH=/usr/lib/libreoffice/sdk/idl
 #IDLPATH=/usr/lib64/libreoffice/sdk/idl
 
 # macOS package
-#IDLC=/Users/arakawayusuke/LibreOffice6.0_SDK/bin/idlc
-#REGMERGE=/Applications/LibreOffice.app/Contents/MacOS/regmerge
-#IDLPATH=/Users/arakawayusuke/LibreOffice6.0_SDK/idl
+IDLC=$HOME/LibreOffice6.0_SDK/bin/idlc
+REGMERGE=/Applications/LibreOffice.app/Contents/MacOS/regmerge
+IDLPATH=$HOME/pLibreOffice6.0_SDK/idl
 
 # LibreOffice Official (deb/rpm) package
 #IDLC=/opt/libreoffice6.0/sdk/bin/idlc
